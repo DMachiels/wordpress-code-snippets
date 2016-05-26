@@ -1,0 +1,25 @@
+In functions.php:
+
+
+add_action( 'admin_menu', 'my_remove_menu_pages' );
+function my_remove_menu_pages() {
+        remove_menu_page('link-manager.php');
+        //remove_menu_page('themes.php');
+        remove_submenu_page( 'themes.php', 'themes.php' );
+        remove_submenu_page( 'themes.php', 'theme-editor.php' );
+        remove_submenu_page( 'themes.php', 'themes.php?page=custom-background' );
+        remove_submenu_page( 'widgets.php', 'theme-editor.php' );
+        remove_menu_page('tools.php');
+        remove_menu_page('upload.php');
+        remove_menu_page('edit-comments.php');
+        remove_menu_page('plugins.php');
+        remove_menu_page('admin.php?page=w3tc_general');
+        remove_menu_page('admin.php?page=better_wp_security');
+        remove_menu_page('admin.php?page=wpcf7');
+        remove_submenu_page( 'index.php', 'update-core.php' );
+        remove_submenu_page( 'options-general.php', 'options-discussion.php' );
+        remove_submenu_page( 'options-general.php', 'options-writing.php' );
+        remove_submenu_page( 'options-general.php', 'options-reading.php' );
+        remove_submenu_page( 'options-general.php', 'options-permalink.php' );
+        remove_submenu_page( 'options-general.php', 'options-media.php' );
+}

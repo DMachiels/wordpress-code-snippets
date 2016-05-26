@@ -1,0 +1,4 @@
+Examples:
+
+/%category%/%postname%/%post_id%/
+/%post_id%/%postname%

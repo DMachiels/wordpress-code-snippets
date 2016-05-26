@@ -1,0 +1,9 @@
+In functions.php:
+
+add_filter('redirect_canonical', 'stop_guessing');
+function stop_guessing($url) {
+ if (is_404()) {
+   return false;
+ }
+ return $url;
+}

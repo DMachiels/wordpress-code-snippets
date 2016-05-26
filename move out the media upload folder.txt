@@ -1,0 +1,4 @@
+In wp-config.php:
+
+define( 'WP_CONTENT_URL', 'http://files.domain.com/media' );
+define( 'WP_CONTENT_DIR', $_SERVER['HOME'] . '/files.domain.com/media' );

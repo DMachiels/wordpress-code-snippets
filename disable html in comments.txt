@@ -1,0 +1,3 @@
+In functions.php:
+
+add_filter( 'pre_comment_content', 'esc_html' );

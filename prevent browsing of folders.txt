@@ -1,0 +1,3 @@
+Add this in the .htaccess of your Wordpress install directory:
+
+Options All -Indexes

@@ -1,0 +1,9 @@
+In wp-config.php:
+
+- To disable post revisions
+
+define( 'WP_POST_REVISIONS', false);
+
+- To limit the number of post revisions
+
+define( 'WP_POST_REVISIONS', 3);
