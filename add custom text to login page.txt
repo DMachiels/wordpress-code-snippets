@@ -1,0 +1,10 @@
+In functions.php:
+
+function wps_login_message( $message ) {
+    if ( empty($message) ){
+        return "<p class='message'>Welcome to this site. Please log in to continue</p>";
+    } else {
+        return $message;
+    }
+}
+add_filter( 'login_message', 'wps_login_message' );

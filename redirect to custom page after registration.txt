@@ -1,0 +1,6 @@
+In functions.php:
+
+function __my_registration_redirect(){
+    return home_url( '/my-page' );
+}
+add_filter( 'registration_redirect', '__my_registration_redirect' );
